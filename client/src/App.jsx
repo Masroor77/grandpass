@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
-import { Settings as SettingsIcon, Smartphone, Menu, X, Grid, Users, LayoutDashboard, LogOut } from 'lucide-react';
+import { Settings as SettingsIcon, Smartphone, Menu, X, Grid, Users, LayoutDashboard, LogOut, Shield } from 'lucide-react';
 import ServiceList from './components/ServiceList';
 import SettingsPage from './components/Settings';
 import CustomersPage from './components/Customers';
@@ -45,6 +45,7 @@ function App() {
               <NavItem to="/" icon={LayoutDashboard} label="Dashboard" />
               <NavItem to="/services" icon={Grid} label="All Services" />
               <NavItem to="/customers" icon={Users} label="Customers" />
+              <NavItem to="/admin" icon={Shield} label="Admin" />
               <NavItem to="/settings" icon={SettingsIcon} label="Settings" />
             </nav>
 
